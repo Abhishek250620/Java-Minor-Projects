@@ -1,0 +1,24 @@
+package com;
+
+public class CalculatorImpl implements Cal {
+	@Override
+	public String add(int a,int b) {
+		return "Sum: "+(a+b);
+	}
+	@Override
+	public String sub(int a,int b) {
+		return "Diff: "+(a-b);
+	}
+	@Override
+	public String mul(int a,int b) {
+		return "pro: "+(a*b);
+	}
+	@Override
+	public String div(int a,int b) {
+		return "Div: "+(a/b);
+	}
+	@Override
+	public String displayErrorMessage() {
+		return "Syntax Error";
+	}
+}

@@ -1,0 +1,31 @@
+package jspider;
+
+import java.util.Scanner;
+
+public class Test {
+	static Scanner sc=new Scanner(System.in);
+	static int amt;
+	static int bal=1000;
+	static void asignVal() {
+		amt=sc.nextInt();
+	}
+	public static void main(String[] args) {
+		Bank b=new BankImpl(bal);
+		while(true){
+			System.out.println("1.Deposite\n2.Withdraw\n3.Check Balance\n4.Exit");
+			int op=sc.nextInt();
+			switch(op) {
+			case 1:
+				b.deposite(amt);
+			case 2:
+				b.withDraw(amt);
+			case 3:b.getBal();
+			case 4:
+				System.exit(0);
+			case 5:
+				System.out.println(b.errorMessage());
+			}
+		}
+
+	}
+}

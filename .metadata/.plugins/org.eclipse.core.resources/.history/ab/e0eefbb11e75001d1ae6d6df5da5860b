@@ -1,0 +1,8 @@
+package jspider;
+
+public interface Bank {
+	void deposite(int amt);
+	void withDraw(int amt);
+	int getBal();
+	String errorMessage();
+}

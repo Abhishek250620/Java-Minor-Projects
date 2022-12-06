@@ -1,0 +1,14 @@
+package jspider;
+
+public class InsuffeintBalException extends RuntimeExcetion {
+private String message;
+
+public InsuffeintBal(String message) {
+	this.message = message;
+}
+
+@Override
+public 
+
+
+}

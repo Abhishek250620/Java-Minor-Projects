@@ -1,0 +1,9 @@
+package com;
+
+public interface Cal {
+	String add(int a,int b) ;
+	String sub(int a,int b) ;
+	String mul(int a,int b) ;
+	String div(int a,int b) ;
+	String displayErrorMessage();
+}
